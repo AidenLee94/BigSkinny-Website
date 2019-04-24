@@ -46,40 +46,6 @@
 	  text-decoration: none;
 	}
 	
-	/*
-	 * Dummy devices (replace them with your own or something else entirely!)
-	 */
-	
-	.product-device {
-	  position: absolute;
-	  right: 10%;
-	  bottom: -30%;
-	  width: 300px;
-	  height: 540px;
-	  background-color: #333;
-	  border-radius: 21px;
-	  -webkit-transform: rotate(30deg);
-	  transform: rotate(30deg);
-	}
-	
-	.product-device::before {
-	  position: absolute;
-	  top: 10%;
-	  right: 10px;
-	  bottom: 10%;
-	  left: 10px;
-	  content: "";
-	  background-color: rgba(255, 255, 255, .1);
-	  border-radius: 5px;
-	}
-	
-	.product-device-2 {
-	  top: -25%;
-	  right: auto;
-	  bottom: 0;
-	  left: 5%;
-	  background-color: #e5e5e5;
-	}
 	
 	.showcase {
 		background-image: url("images/wallet1.jpg");
@@ -121,7 +87,7 @@
 		background-image: url("images/wallet1.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 93.1vh;
+		height: 94vh;
 
 	}
 	
@@ -152,8 +118,29 @@
 	.subheading {
 		font-weight: 300;
 	}
+	
+	.copyright-text {
+		text-align: center;
+	}
+	
+	.footer {
+		background-color: #f2f2f2
+	}
+	
+/*
+	body {
+		background-color: #f2f2f2
+	}
+*/
+#light-product-img {
+	width: 100%;
+	margin: auto;
+	padding: 0px 20px;
+}
 
-
+.description-text {
+	color: #888;
+}
 	</style> 
 	</head>
 	<body>
@@ -179,52 +166,170 @@
 				</div>
 			</div>
 		</div>
-
-		<footer class="container py-5">
+		
+		<!-- Light -->
+		<div class="container light">
+			<br>
+			<br>
+			<br>
+			<br>
 			<div class="row">
-				<div class="col-12 col-md">
-				<small class="d-block mb-3 text-muted">&copy; Copyright 2019</small>
-				</div>
-				<div class="col-6 col-md">
-					<h5>Features</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Cool stuff</a></li>
-						<li><a class="text-muted" href="#">Random feature</a></li>
-						<li><a class="text-muted" href="#">Team feature</a></li>
-						<li><a class="text-muted" href="#">Stuff for developers</a></li>
-						<li><a class="text-muted" href="#">Another one</a></li>
-						<li><a class="text-muted" href="#">Last time</a></li>
-					</ul>
-				</div>
-				<div class="col-6 col-md">
-					<h5>Resources</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Resource</a></li>
-						<li><a class="text-muted" href="#">Resource name</a></li>
-						<li><a class="text-muted" href="#">Another resource</a></li>
-						<li><a class="text-muted" href="#">Final resource</a></li>
-					</ul>
-				</div>
-				<div class="col-6 col-md">
-					<h5>Resources</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Business</a></li>
-						<li><a class="text-muted" href="#">Education</a></li>
-						<li><a class="text-muted" href="#">Government</a></li>
-						<li><a class="text-muted" href="#">Gaming</a></li>
-					</ul>
-				</div>
-				<div class="col-6 col-md">
-					<h5>About</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Team</a></li>
-						<li><a class="text-muted" href="#">Locations</a></li>
-						<li><a class="text-muted" href="#">Privacy</a></li>
-						<li><a class="text-muted" href="#">Terms</a></li>
-					</ul>
-				</div>
+				<div class="col align-self-center">
+					<h1 style="font-weight: 600;">Light. Years Ahead.</h1>
+					<h4 class="description-text">The lightest wallet ever made.</h4>
+					<br>
+					<div class="row">
+						<div class="col">
+							<h2>50%</h2>
+							<label>Lighter than most wallets</label>							
+						</div>
+						<div class="col">
+							<div>
+							<i class="fas fa-feather" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+							<label>New nylon micro-fiber material</label>
+						</div>
+					</div>
+					<img id="light-product-img" src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456012084pt06jpg_9144404590_o_900x.jpg?v=1555493004">
+					<br>
+					
 			</div>
-		</footer>
+			</div>
+			<br>
+			<br>
+		</div>
+		<!-- Light -->
+		<div class="container light">
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col align-self-center">
+					<h1 style="font-weight: 600;">Thinnovation.</h1>
+					<h4 class="description-text">Ultra-thin wallet that fits in any pocket.</h4>
+					<br>
+					<div class="row">
+						<div class="col">
+							<h2>50%</h2>
+							<label>Thinner than most wallets</label>							
+						</div>
+						<div class="col">
+							<div>
+							<i class="fas fa-feather" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+							<label>New nylon micro-fiber material</label>
+						</div>
+					</div>
+					<img id="light-product-img" src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456012084pt06jpg_9144404590_o_900x.jpg?v=1555493004">
+					<br>
+					
+			</div>
+			</div>
+			<br>
+			<br>
+		</div>
+		
+		<!-- Light -->
+		<div class="container light">
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col align-self-center">
+					<h1 style="font-weight: 600;">Makes a splash. Takes a splash.</h1>
+					<h4 class="description-text">Industry-leading water and dust resistance.</h4>
+					<br>
+					<div class="row">
+						<div class="col">
+							<h2>Up to 2 hr</h2>
+							<label>To dry out</label>							
+						</div>
+						<div class="col">
+							<div>
+							<i class="fas fa-feather" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+							<label>New nylon micro-fiber material</label>
+						</div>
+					</div>
+					<img id="light-product-img" src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456012084pt06jpg_9144404590_o_900x.jpg?v=1555493004">
+					<br>
+					
+			</div>
+			</div>
+			<br>
+			<br>
+		</div>
+
+<!--
+		<div class="container thin">
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col align-self-center">
+					<h1 style="font-weight: 600;">Light. Years Ahead.</h1>
+					<h4>Our ultra-slim wallet designs solve the top 5 wallet problems.</h4>
+					<br>
+					<img src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456012084pt06jpg_9144404590_o_900x.jpg?v=1555493004">
+					<br>
+					<br>
+			</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+-->
+
+		
+		<div class="footer">
+			<footer class="container footer py-5">
+				<div class="row">
+					<div class="col-6 col-md">
+						<h5>Features</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Cool stuff</a></li>
+							<li><a class="text-muted" href="#">Random feature</a></li>
+							<li><a class="text-muted" href="#">Team feature</a></li>
+							<li><a class="text-muted" href="#">Stuff for developers</a></li>
+							<li><a class="text-muted" href="#">Another one</a></li>
+							<li><a class="text-muted" href="#">Last time</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>Resources</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Resource</a></li>
+							<li><a class="text-muted" href="#">Resource name</a></li>
+							<li><a class="text-muted" href="#">Another resource</a></li>
+							<li><a class="text-muted" href="#">Final resource</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>Resources</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Business</a></li>
+							<li><a class="text-muted" href="#">Education</a></li>
+							<li><a class="text-muted" href="#">Government</a></li>
+							<li><a class="text-muted" href="#">Gaming</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>About</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Team</a></li>
+							<li><a class="text-muted" href="#">Locations</a></li>
+							<li><a class="text-muted" href="#">Privacy</a></li>
+							<li><a class="text-muted" href="#">Terms</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<small class="d-block mb-3 text-muted mx-auto">&copy; Copyright 2019 Big Skinny Corporation</small>
+				</div>
+			</footer>
+		</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
 	</body>
 </html>
