@@ -7,10 +7,12 @@
     <title>Big Skinny - Men's Collection</title>
     <!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <style>
-	
 	@media (min-width: 768px) {
 		#light-product-img {
 			padding: 0px 100px !important;
@@ -24,7 +26,7 @@
 			padding: 0px 200px !important;
 		}
 	}
-      
+
     .container {
 	  max-width: 960px;
 	}
@@ -50,7 +52,6 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
-	
 	}
 	
 	/*
@@ -67,7 +68,13 @@
 	    flex: 1;
 	  }
 	}
+/*
 	
+	@media (max-width: ) {
+		
+	}
+	
+*/
 	.overflow-hidden { overflow: hidden; }
 	
 	.showcase {
@@ -115,7 +122,6 @@
 	}
 	
 	.cover {
-		height: 70vh;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
@@ -132,6 +138,58 @@
 	.card {
 		margin: 5px;
 	}
+	
+	#search-field {
+		padding: 8px;
+		border-radius: 10px;
+		border: #686868 1px solid;
+		width: 100%
+	}
+	
+	.menu-container {
+		padding: 80px 30px;
+		margin: auto;
+	}
+	
+	.menu {
+		text-align: center;
+		box-shadow: 0 4px 8px 0 rgba(108,127,135,.1), 0 1px 4px 0 rgba(108,127,135,.36);
+	}
+	
+	.module-btn-icon {
+		padding-bottom: 7px;
+		font-size: 20px;
+	}
+	
+	.module-btn:hover {
+		background-color: #3f4e62;
+		color: white;
+		cursor: pointer;
+		transition: 100ms background cubic-bezier(0.4, 0, 0.6, 1)
+	}	
+	
+	.module-btn {
+		color: #272727;
+		background-color: white;
+		text-align: center;
+		padding: 10px;
+		padding-top: 25px;
+		transition: 200ms background cubic-bezier(0.4, 0, 0.6, 1)
+	}
+	
+	.btn-grid {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.menu-group {
+		background-color: #2b5487;
+	}
+	
+	.module-btn-label label:hover {
+		cursor: pointer;
+	}
+
 	</style> 
 	</head>
 	<body>
@@ -149,11 +207,81 @@
 		    </div>
 		</nav>
 		
-		<div class="cover vc-parent">
+		<div class="cover">
 			<div class="shading">
-				<div class="vc-child welcome-text">
-					<h1>Welcome to Big Skinny Support</h1>
-					<input type="text">
+				<div class="welcome-text" style="padding-top: 200px;">
+					<h1>Big Skinny Support</h1>
+					<br>
+					<div class="container">
+					<div class="row">
+						<div class="col-10 col-md-7 mx-auto" style="padding-bottom: 200px;"><input type="text" id="search-field" size="55" placeholder="Search Support"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="menu-group">
+			<div class="menu-container">
+				<div class="menu container-fluid">
+					<div class="row btn-grid modules">
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-shopping-cart"></i></div>
+								<div class="module-btn-label"><label>Order</label></div>
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-shipping-fast"></i></div>
+								<div class="module-btn-label"><label>Shipments</label></div>
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-undo"></i></div>
+								<div class="module-btn-label"><label>Returns</label></div>
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-credit-card"></i></div>
+								<div class="module-btn-label"><label>Billing</label></div>
+							</div>
+						</div>
+					</div>
+					<div class="row btn-grid modules">
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-burn"></i></div>
+								<div class="module-btn-label"><label>Damage</label></div>
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-heart"></i></div>
+								<div class="module-btn-label"><label>Care</label></div>
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-scroll"></i></div>
+								<div class="module-btn-label"><label>Policy</label></div>
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-3 module-btn" onclick="window.location.href = 'https://www.bigskinny.net/faq.html'">
+							<div class="module-btn-inner">
+								<div class="module-btn-icon"><i class="fas fa-balance-scale"></i></div>
+								<div class="module-btn-label"><label>Legal</label></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -201,39 +329,16 @@
 				</div>
 			</footer>
 		</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-		 $( function() {
-			var availableTags = [
-			"ActionScript",
-			"AppleScript",
-			"Asp",
-			"BASIC",
-			"C",
-			"C++",
-			"Clojure",
-			"COBOL",
-			"ColdFusion",
-			"Erlang",
-			"Fortran",
-			"Groovy",
-			"Haskell",
-			"Java",
-			"JavaScript",
-			"Lisp",
-			"Perl",
-			"PHP",
-			"Python",
-			"Ruby",
-			"Scala",
-			"Scheme"
-			];
-			$( "#tags" ).autocomplete({
+		<script>
+		var availableTags = [
+			"Water Damage", "Tear and Rip", "How to Return", "Oil Stain", "Surface Scratch", "Surface Damage", "Lost & Stolen", "Wash Instructions", "Exchange an Item", "Customer Complaint", "Disposal of Wallet", "Payment Methods", "Shipping & Tracking Order", "Leather Care", "Find a Retail Store", "Find a Show", "Contact Customer Services"
+		];
+		$("#search-field").autocomplete({
 			source: availableTags
-			});
-			} );
+    	});
 	</script>
+
+<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 	</body>
 </html>
 
