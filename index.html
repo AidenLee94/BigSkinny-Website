@@ -9,8 +9,20 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
-	
+	@media (max-width: 768px) {
+		.nav-logo {
+			text-align: center !important;
+		}
+		
+		.drop-menu {
+			position: absolute;
+			color: white;
+		}
+	}
 	@media (min-width: 768px) {
+		.drop-menu {
+			display: none;
+		}
 		#light-product-img {
 			padding: 0px 100px !important;
 		}
@@ -146,241 +158,313 @@
 		background-color: #333;
 		color: white;
 	}
+	
+	/*sidenav */
+	.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 	</style> 
 	</head>
 	<body>
-		<nav class="site-header sticky-top py-1">
-			<div class="container d-flex flex-column flex-md-row justify-content-between">
-				<a class="py-2" href="index.html">
-					<img height="25px" src="images/logo.png">    
-	    		</a>
-			    <a class="py-2 d-none d-md-inline-block" href="mens.html">Men's Wallets</a>
-			    <a class="py-2 d-none d-md-inline-block" href="womens.html">Women's Wallets</a>
-			    <a class="py-2 d-none d-md-inline-block" href="card-cases.html">Card Cases & Clips</a>
-			    <a class="py-2 d-none d-md-inline-block" href="accessory.html">Accessory</a>
-			    <a class="py-2 d-none d-md-inline-block" href="support.html">Support</a>
-			    <a class="py-2 d-none d-md-inline-block" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
-		    </div>
-		</nav>
-		
-		<div class="showcase vc-parent">
-			<div class="shading">
-				<div class="vc-child welcome-text">
-					<h1 style="text-align: center;">Introducing Bare Essential</h1>
-					<h3 class="subheading">Now available in charcoal.</h3>
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+		<div class="main">
+			<nav class="site-header sticky-top py-1">
+				<div class="container d-flex flex-column flex-md-row justify-content-between">
+					<div class="py-2 drop-menu" onclick="openNav()" href="javascript:void(0)"><i class="fas fa-bars"></i></div>
+					<a class="py-2 nav-logo" href="index.html">
+							<img height="25px" src="images/logo.png">
+	
+		    		</a>
+				    <a class="py-2 d-none d-md-inline-block" href="mens.html">Men's Wallets</a>
+				    <a class="py-2 d-none d-md-inline-block" href="womens.html">Women's Wallets</a>
+				    <a class="py-2 d-none d-md-inline-block" href="card-cases.html">Card Cases & Clips</a>
+				    <a class="py-2 d-none d-md-inline-block" href="accessory.html">Accessory</a>
+				    <a class="py-2 d-none d-md-inline-block" href="support.html">Support</a>
+				    <a class="py-2 d-none d-md-inline-block" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+			    </div>
+			</nav>
+			
+			<div class="showcase vc-parent">
+				<div class="shading">
+					<div class="vc-child welcome-text">
+						<h1 style="text-align: center;">Introducing Bare Essential</h1>
+						<h3 class="subheading">Now available in charcoal.</h3>
+					</div>
 				</div>
 			</div>
-		</div>
-		
-		<!-- Light -->
-		<div class="container light">
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="row">
-				<div class="col align-self-center">
-					<h1 style="font-weight: 600;">Light. Years Ahead.</h1>
-					<h4 class="description-text">The lightest wallet ever made.</h4>
+			
+			<!-- Light -->
+			<div class="container light">
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col align-self-center">
+						<h1 style="font-weight: 600;">Light. Years Ahead.</h1>
+						<h4 class="description-text">The lightest wallet ever made.</h4>
+						<br>
+						<div class="row">
+							<div class="col">
+								<h2>50%</h2>
+								<label>Lighter than most wallets</label>							
+							</div>
+							<div class="col">
+								<div>
+								<i class="fas fas fa-feather-alt" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+								<label>New nylon micro-fiber material</label>
+							</div>
+						</div>
+						<br>
+						<br>
+						<img id="light-product-img" src="images/light-wallet.jpg">
+						<br>	
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+			
+			<!-- Thin -->
+			<div class="thin">
+				<div class="container">
+					<br>
+					<br>
+					<br>
 					<br>
 					<div class="row">
-						<div class="col">
-							<h2>50%</h2>
-							<label>Lighter than most wallets</label>							
-						</div>
-						<div class="col">
-							<div>
-							<i class="fas fas fa-feather-alt" style="font-size: 2em; padding-bottom: 8px;"></i></div>
-							<label>New nylon micro-fiber material</label>
+						<div class="col align-self-center">
+							<h1 style="font-weight: 600; color: white;">Thinnovation.</h1>
+							<h4 class="description-text" style="color: #e9e9e9;">Ultra-thin wallet that fits any pocket.</h4>
+							<br>
+							<div class="row">
+								<div class="col">
+									<h2>7mm</h2>
+									<label>Thin at thinnest point</label>							
+								</div>
+								<div class="col">
+									<h2>Up to 70%</h2>
+									<label>Thinner than most wallets</label>							
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col">
+									<div><i class="fas fa-chess-board" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+									<label>Most flexible and durable material</label>
+								</div>
+								<div class="col">
+									<h2>RFID</h2>
+									<label>Protection options available</label>
+								</div>
+							</div>
+							</div>
+							<br>
+					</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+			
+			<!-- Water Resistance -->
+			<div class="water">
+				<div class="container">
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col align-self-center">
+							<h1 style="font-weight: 600;">Makes a splash. <br>Takes a splash.</h1>
+							<h4 class="description-text" style="color: #afafaf;">Industry-leading water and dust resistance.</h4>
+							<br>
+							<div class="row">
+								<div class="col">
+									<div><i class="fas fa-tint" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+									<label>Water resistance</label>
+								</div>
+								<div class="col">
+									<div><i class="fas fa-life-ring" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+									<label>Machine washable</label>
+								</div>					
+							</div>
+							<br>
+							<div class="row">
+								<div class="col">
+									<h2>1 hr</h2>
+									<label>Or less to dry out</label>							
+								</div>
+								<div class="col">
+									<h2>IP68</h2>
+									<label>Water and dust resistance rating</label>							
+								</div>
+							</div>
+							<br>
+							<br>
+							<img id="water-product-img" src="images/water-wallet.png">
+							<br>
 						</div>
 					</div>
 					<br>
 					<br>
-					<img id="light-product-img" src="images/light-wallet.jpg">
-					<br>	
 				</div>
 			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-		
-		<!-- Thin -->
-		<div class="thin">
-			<div class="container">
-				<br>
-				<br>
-				<br>
-				<br>
-				<div class="row">
-					<div class="col align-self-center">
-						<h1 style="font-weight: 600; color: white;">Thinnovation.</h1>
-						<h4 class="description-text" style="color: #e9e9e9;">Ultra-thin wallet that fits any pocket.</h4>
-						<br>
-						<div class="row">
-							<div class="col">
-								<h2>7mm</h2>
-								<label>Thin at thinnest point</label>							
+			
+			<!-- Pocket Features -->
+			<div class="pocket">
+				<div class="container">
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col align-self-center">
+							<h1 style="font-weight: 600;">Only thing that hasn't changed is its name.</h1>
+							<h4 class="description-text" style="color: #888;">Wide, non-slip pockets hold more cards than ever.</h4>
+							<br>
+							<div class="row">
+								<div class="col">
+									<div><i class="fas fa-water" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+									<label>Non-slip coating</label>
+								</div>
+								<div class="col">
+									<div><i class="fas fa-weight-hanging" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+									<label>Cards don't fall out</label>
+								</div>					
 							</div>
-							<div class="col">
-								<h2>Up to 70%</h2>
-								<label>Thinner than most wallets</label>							
+							<br>
+							<div class="row">
+								<div class="col">
+									<div><i class="fas fa-shield-alt" style="font-size: 2em; padding-bottom: 8px;"></i></div>
+									<label>Better protection to cards than most wallets</label>							
+								</div>
+								<div class="col">
+									<h2>Up to 5</h2>
+									<label>Cards per pocket</label>							
+								</div>
 							</div>
+							<img id="pocket-product-img" src="https://cdn.shopify.com/s/files/1/1135/7924/products/9091385513_24108a4033_o_720x.jpg?v=1555492747">
+							<br>
 						</div>
-						<br>
-						<div class="row">
-							<div class="col">
-								<div><i class="fas fa-chess-board" style="font-size: 2em; padding-bottom: 8px;"></i></div>
-								<label>Most flexible and durable material</label>
-							</div>
-							<div class="col">
-								<h2>RFID</h2>
-								<label>Protection options available</label>
-							</div>
-						</div>
-						</div>
-						<br>
+					</div>
+					<br>
+					<br>
 				</div>
-				</div>
-				<br>
-				<br>
-				<br>
-				<br>
 			</div>
-		</div>
-		
-		<!-- Water Resistance -->
-		<div class="water">
-			<div class="container">
-				<br>
-				<br>
-				<br>
-				<br>
-				<div class="row">
-					<div class="col align-self-center">
-						<h1 style="font-weight: 600;">Makes a splash. <br>Takes a splash.</h1>
-						<h4 class="description-text" style="color: #afafaf;">Industry-leading water and dust resistance.</h4>
-						<br>
-						<div class="row">
-							<div class="col">
-								<div><i class="fas fa-tint" style="font-size: 2em; padding-bottom: 8px;"></i></div>
-								<label>Water resistance</label>
-							</div>
-							<div class="col">
-								<div><i class="fas fa-life-ring" style="font-size: 2em; padding-bottom: 8px;"></i></div>
-								<label>Machine washable</label>
-							</div>					
+	
+			
+			<div class="footer">
+				<footer class="container footer py-5">
+					<div class="row">
+						<div class="col-6 col-md">
+							<h5>Retail</h5>
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted" href="#">Find a Show</a></li>
+								<li><a class="text-muted" href="#">Find a Store</a></li>
+								<li><a class="text-muted" href="#">Retail Program</a></li>
+							</ul>
 						</div>
-						<br>
-						<div class="row">
-							<div class="col">
-								<h2>1 hr</h2>
-								<label>Or less to dry out</label>							
-							</div>
-							<div class="col">
-								<h2>IP68</h2>
-								<label>Water and dust resistance rating</label>							
-							</div>
+						<div class="col-6 col-md">
+							<h5>Resources</h5>
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted" href="#">Wallet Care</a></li>
+								<li><a class="text-muted" href="#">Wallet FAQ</a></li>
+								<li><a class="text-muted" href="#">The Skinny Blog</a></li>
+							</ul>
 						</div>
-						<br>
-						<br>
-						<img id="water-product-img" src="images/water-wallet.png">
-						<br>
+						<div class="col-6 col-md">
+							<h5>Values</h5>
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted" href="#">Wallet Stories</a></li>
+								<li><a class="text-muted" href="#">Green Wallet Policy</a></li>
+								<li><a class="text-muted" href="#">Supplier Responsibility</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-md">
+							<h5>About</h5>
+							<ul class="list-unstyled text-small">
+								<li><a class="text-muted" href="#">Newsroom</a></li>
+								<li><a class="text-muted" href="#">Leadership</a></li>
+								<li><a class="text-muted" href="#">Terms</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<br>
-				<br>
+					<br>
+					<br>
+					<div class="row">
+						<small class="d-block mb-3 text-muted mx-auto">&copy; Copyright 2019 Big Skinny Corporation</small>
+					</div>
+				</footer>
 			</div>
-		</div>
-		
-		<!-- Pocket Features -->
-		<div class="pocket">
-			<div class="container">
-				<br>
-				<br>
-				<br>
-				<br>
-				<div class="row">
-					<div class="col align-self-center">
-						<h1 style="font-weight: 600;">Only thing that hasn't changed is its name.</h1>
-						<h4 class="description-text" style="color: #888;">Wide, non-slip pockets hold more cards than ever.</h4>
-						<br>
-						<div class="row">
-							<div class="col">
-								<div><i class="fas fa-water" style="font-size: 2em; padding-bottom: 8px;"></i></div>
-								<label>Non-slip coating</label>
-							</div>
-							<div class="col">
-								<div><i class="fas fa-weight-hanging" style="font-size: 2em; padding-bottom: 8px;"></i></div>
-								<label>Cards don't fall out</label>
-							</div>					
-						</div>
-						<br>
-						<div class="row">
-							<div class="col">
-								<div><i class="fas fa-shield-alt" style="font-size: 2em; padding-bottom: 8px;"></i></div>
-								<label>Better protection to cards than most wallets</label>							
-							</div>
-							<div class="col">
-								<h2>Up to 5</h2>
-								<label>Cards per pocket</label>							
-							</div>
-						</div>
-						<img id="pocket-product-img" src="https://cdn.shopify.com/s/files/1/1135/7924/products/9091385513_24108a4033_o_720x.jpg?v=1555492747">
-						<br>
-					</div>
-				</div>
-				<br>
-				<br>
-			</div>
-		</div>
-
-		
-		<div class="footer">
-			<footer class="container footer py-5">
-				<div class="row">
-					<div class="col-6 col-md">
-						<h5>Retail</h5>
-						<ul class="list-unstyled text-small">
-							<li><a class="text-muted" href="#">Find a Show</a></li>
-							<li><a class="text-muted" href="#">Find a Store</a></li>
-							<li><a class="text-muted" href="#">Retail Program</a></li>
-						</ul>
-					</div>
-					<div class="col-6 col-md">
-						<h5>Resources</h5>
-						<ul class="list-unstyled text-small">
-							<li><a class="text-muted" href="#">Wallet Care</a></li>
-							<li><a class="text-muted" href="#">Wallet FAQ</a></li>
-							<li><a class="text-muted" href="#">The Skinny Blog</a></li>
-						</ul>
-					</div>
-					<div class="col-6 col-md">
-						<h5>Values</h5>
-						<ul class="list-unstyled text-small">
-							<li><a class="text-muted" href="#">Wallet Stories</a></li>
-							<li><a class="text-muted" href="#">Green Wallet Policy</a></li>
-							<li><a class="text-muted" href="#">Supplier Responsibility</a></li>
-						</ul>
-					</div>
-					<div class="col-6 col-md">
-						<h5>About</h5>
-						<ul class="list-unstyled text-small">
-							<li><a class="text-muted" href="#">Newsroom</a></li>
-							<li><a class="text-muted" href="#">Leadership</a></li>
-							<li><a class="text-muted" href="#">Terms</a></li>
-						</ul>
-					</div>
-				</div>
-				<br>
-				<br>
-				<div class="row">
-					<small class="d-block mb-3 text-muted mx-auto">&copy; Copyright 2019 Big Skinny Corporation</small>
-				</div>
-			</footer>
 		</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+	<script>
+	function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}	</script>
 	</body>
 </html>
 
