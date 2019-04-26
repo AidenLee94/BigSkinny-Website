@@ -124,6 +124,7 @@
 	.container-fluid {
 		margin: 20px 0px;
 	}
+	
 	.check-box-label {
 		font-size: 14px;
 	}
@@ -158,26 +159,23 @@
 		
 		<div class="container-fluid">
 			<div class="row flex-xl-nowrap">
-				<div class="col-12 col-md-3 col-xl-2">
-					<h6>Product Types</h6>
+				<div class="col-12 col-md-3 col-xl-2" style="padding-left: 20px;">
+					<h6 style="margin-top: 8px;">Product Types</h6>
 					<div class="custom-control custom-checkbox my-1 mr-sm-2">
-						<input type="checkbox" class="custom-control-input" id="customControlInline1">
+						<input type="checkbox" class="custom-control-input" id="customControlInline1" checked="checked">
 						<label class="custom-control-label check-box-label" for="customControlInline1">Bi-fold Wallets</label>
 					</div>
 					<div class="custom-control custom-checkbox my-1 mr-sm-2">
-						<input type="checkbox" class="custom-control-input" id="customControlInline2">
+						<input type="checkbox" class="custom-control-input" id="customControlInline2" checked="checked">
 						<label class="custom-control-label check-box-label" for="customControlInline2">Tri-fold Wallets</label>
 					</div>
 					<div class="custom-control custom-checkbox my-1 mr-sm-2">
-						<input type="checkbox" class="custom-control-input" id="customControlInline3">
+						<input type="checkbox" class="custom-control-input" id="customControlInline3" checked="checked">
 						<label class="custom-control-label check-box-label" for="customControlInline3">RFID Wallets</label>
 					</div>
 					<div class="custom-control custom-checkbox my-1 mr-sm-2">
-						<input type="checkbox" class="custom-control-input" id="customControlInline4">
+						<input type="checkbox" class="custom-control-input" id="customControlInline4" checked="checked">
 						<label class="custom-control-label check-box-label" for="customControlInline4">Travel Wallets</label>
-					</div>
-					<div>
-						<a>Show All</a>
 					</div>
 				</div>
 				<div class="col-12 col-md-9 col-xl-10">
@@ -187,16 +185,6 @@
 								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456010479pt03jpg_9083296631_o_900x.jpg?v=1555492600">
 								<div class="card-body">
 									<h5 class="card-title">Leather L-Shape</h5>
-									<p class="card-text">$39.99</p>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4" data-product-type="bifold">
-							<div class="card shadow-sm">
-								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456010493pt05jpg_9085849464_o_294de308-bb7f-4dad-b548-4b4577406e66_900x.jpg?v=1555492662">
-								<div class="card-body">
-									<h5 class="card-title">Leather Multi Bi-Fold</h5>
 									<p class="card-text">$39.99</p>
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
@@ -222,12 +210,52 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4" data-product-type="bifold">
+						<div class="col-sm-6 col-md-4" data-product-type="trifold">
 							<div class="card shadow-sm">
-								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/the-curve-in-leather-112_900x.jpg?v=1554875476">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456010585pt02jpg_9084305431_o_900x.jpg?v=1554876344">
 								<div class="card-body">
-									<h5 class="card-title">Leather Curve</h5>
-									<p class="card-text">$39.99</p>
+									<h5 class="card-title">Leather Tri-fold</h5>
+									<p class="card-text">$49.99</p>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="rfid">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/rfid-blocking-bi-fold-18_900x.jpg?v=1555493122">
+								<div class="card-body">
+									<h5 class="card-title">RFID Bi-Fold</h5>
+									<p class="card-text">$49.99</p>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="rfid">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/rfid-blocking-leather-l-fold-black-21_6521dc12-172c-4d23-9be7-058b9e8582b3_900x.jpg?v=1555493239">
+								<div class="card-body">
+									<h5 class="card-title">RFID L-Fold</h5>
+									<p class="card-text">$49.99</p>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="travel">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/9075421663_d70a8f24bd_o_900x.jpg?v=1555492473">
+								<div class="card-body">
+									<h5 class="card-title">Leather Travel Badge</h5>
+									<p class="card-text">$59.99</p>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="travel">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/815456010370pt01jpg_9032802025_o_900x.jpg?v=1554879948">
+								<div class="card-body">
+									<h5 class="card-title">Executive Black</h5>
+									<p class="card-text">$49.99</p>
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -282,6 +310,45 @@
 			</footer>
 		</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+	<script>
+		//Bi-Fold
+		$('#customControlInline1').click(function(){
+            if($(this).prop("checked") == true){
+	            $("[data-product-type='bifold']").show();
+            }
+            else if($(this).prop("checked") == false){
+	            $("[data-product-type='bifold']").hide();
+            }
+        });
+        //Tri-Fold
+        $('#customControlInline2').click(function(){
+            if($(this).prop("checked") == true){
+	            $("[data-product-type='trifold']").show();
+            }
+            else if($(this).prop("checked") == false){
+	            $("[data-product-type='trifold']").hide();
+            }
+        });
+        //RFID
+        $('#customControlInline3').click(function(){
+            if($(this).prop("checked") == true){
+	            $("[data-product-type='rfid']").show();
+            }
+            else if($(this).prop("checked") == false){
+	            $("[data-product-type='rfid']").hide();
+            }
+        });
+        //Travel
+        $('#customControlInline4').click(function(){
+            if($(this).prop("checked") == true){
+	            $("[data-product-type='travel']").show();
+            }
+            else if($(this).prop("checked") == false){
+	            $("[data-product-type='travel']").hide();
+            }
+        });
+		
+	</script>
 	</body>
 </html>
 
