@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Big Skinny - Accessory</title>
+    <!-- Bootstrap core CSS -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+      .ratings {
+        top: -1px;
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        color: #b1b1b1;
+        overflow: hidden;
+        font-size: 25px;
+        padding-right: 15px;
+      }
+      .full-stars {
+          position: absolute;
+          left: 0;
+          top: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          color: gold;
+          font-size: 25px;
+      }
+      .empty-stars:before, .full-stars:before {
+          content:"\2605\2605\2605\2605\2605";
+          font-size: 25px;
+      }
+
+
+
+
+  	@media (min-width: 768px) {
+  		#light-product-img {
+  			padding: 0px 100px !important;
+  		}
+
+  		#water-product-img {
+  			padding: 0px 200px !important;
+  		}
+
+  		#pocket-product-img {
+  			padding: 0px 200px !important;
+  		}
+  	}
+
+    .container {
+	  max-width: 960px;
+  	}
+
+	/* Custom translucent site header */
+
+	.site-header {
+	  background-color: rgba(0, 0, 0, .85);
+	  -webkit-backdrop-filter: saturate(180%) blur(20px);
+	  backdrop-filter: saturate(180%) blur(20px);
+	}
+	.site-header a {
+	  color: #999;
+	  transition: ease-in-out color .15s;
+	}
+	.site-header a:hover {
+	  color: #fff;
+	  text-decoration: none;
+	}
+
+	/* .showcase {
+		background-image: url("images/wallet1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	} */
+
+	/*
+	 * Extra utilities
+	 */
+
+	.flex-equal > * {
+	  -ms-flex: 1;
+	  flex: 1;
+	}
+	@media (min-width: 768px) {
+	  .flex-md-equal > * {
+	    -ms-flex: 1;
+	    flex: 1;
+	  }
+	}
+
+	.overflow-hidden { overflow: hidden; }
+
+	/* .showcase {
+		background-image: url("images/wallet1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 94vh;
+	} */
+
+	/* Verticle Centering Div */
+	.vc-parent {
+		position: relative;
+	}
+
+	.vc-child {
+		position: absolute;
+		top: 50%;
+		height: 100px;
+		margin-top: -20px;
+	}
+
+	/* Cover Styling */
+	.welcome-text {
+		color: white;
+		text-align: center;
+		width: 100%;
+	}
+
+	.shading {
+		background-color: rgba(0, 0, 0, 0.15);
+		height: 100%;
+	}
+
+	.subheading {
+		font-weight: 300;
+	}
+
+	.copyright-text {
+		text-align: center;
+	}
+
+	.footer {
+		background-color: #f2f2f2
+	}
+
+	.cover {
+		height: 35vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-image: url("https://cdn.shopify.com/s/files/1/1135/7924/products/BigSkinny-43_2.jpg?v=1554879379");
+	}
+
+	.container-fluid {
+		margin: 20px 0px;
+	}
+
+	.check-box-label {
+		font-size: 14px;
+	}
+
+	.card {
+		margin: 5px;
+	}
+	</style>
+	</head>
+	<body>
+		<nav class="site-header sticky-top py-1">
+			<div class="container d-flex flex-column flex-md-row justify-content-between">
+				<a class="py-2" href="index.html">
+					<img height="25px" src="images/logo.png">
+	    		</a>
+			    <a class="py-2 d-none d-md-inline-block" href="mens.html">Men's Wallets</a>
+			    <a class="py-2 d-none d-md-inline-block" href="womens.html">Women's Wallets</a>
+			    <a class="py-2 d-none d-md-inline-block" href="card-cases.html">Card Cases & Clips</a>
+			    <a class="py-2 d-none d-md-inline-block" href="accessories.html">Accessories</a>
+			    <a class="py-2 d-none d-md-inline-block" href="support.html">Support</a>
+			    <a class="py-2 d-none d-md-inline-block" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+		    </div>
+		</nav>
+
+		<div class="cover vc-parent">
+			<div class="shading">
+				<div class="vc-child welcome-text">
+					<h1>Accessory</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row flex-xl-nowrap">
+				<div class="col-12 col-md-3 col-xl-2" style="padding-left: 20px;">
+					<h6 style="margin-top: 8px;">Product Types</h6>
+					<div class="custom-control custom-checkbox my-1 mr-sm-2">
+						<input type="checkbox" class="custom-control-input" id="customControlInline1" checked="checked">
+						<label class="custom-control-label check-box-label" for="customControlInline1">Travel Bag</label>
+					</div>
+					<div class="custom-control custom-checkbox my-1 mr-sm-2">
+						<input type="checkbox" class="custom-control-input" id="customControlInline2" checked="checked">
+						<label class="custom-control-label check-box-label" for="customControlInline2">Card Insert</label>
+					</div>
+					<div class="custom-control custom-checkbox my-1 mr-sm-2">
+						<input type="checkbox" class="custom-control-input" id="customControlInline3" checked="checked">
+						<label class="custom-control-label check-box-label" for="customControlInline3">Card Sleeve</label>
+					</div>
+
+				</div>
+				<div class="col-12 col-md-9 col-xl-10">
+					<div class="row">
+						<div class="col-sm-6 col-md-4" data-product-type="travalBag">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/00.jpg?v=1525258004" height="285">
+								<div class="card-body">
+									<h5 class="card-title">Cheshire Convertible Ocean Blue</h5>
+									<p class="card-text">$50.94</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:90%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="travalBag">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/green_cheshire.jpg?v=1554879379">
+								<div class="card-body">
+									<h5 class="card-title">Cheshire Convertible Verdant Green</h5>
+									<p class="card-text">$50.94</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:87%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="travalBag">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://cdn.shopify.com/s/files/1/1135/7924/products/IMG_7103_460x.JPG?v=1549439303" height="285" >
+								<div class="card-body">
+									<h5 class="card-title">Expedition Crossbody Charcoal</h5>
+									<p class="card-text">$93.19</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:83%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="insert">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://s.yimg.com/aah/yhst-94975210642937/card-insert-76.jpg" height="260">
+								<div class="card-body">
+									<h5 class="card-title">Wallet Insert</h5>
+									<p class="card-text">$9.00</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:75%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="insert">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://s.yimg.com/aah/yhst-94975210642937/id-insert-56.jpg" height="260">
+								<div class="card-body">
+									<h5 class="card-title">ID Insert</h5>
+									<p class="card-text">$9.00</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:88%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+            <div class="col-sm-6 col-md-4" data-product-type="insert">
+              <div class="card shadow-sm">
+                <img class="card-img-top" src="https://s.yimg.com/aah/yhst-94975210642937/tri-fold-wallet-card-insert-or-photo-insert-40.jpg#jmui=f%3A1707%3A305769591%3A0TJ2esKaVmFpkv5edJK3c4e3" height="260">
+                <div class="card-body">
+                  <h5 class="card-title">Trifold Waller Card Insert</h5>
+                  <p class="card-text">$2.50</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:90%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+						<div class="col-sm-6 col-md-4" data-product-type="sleeve">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://s.yimg.com/aah/yhst-94975210642937/funky-bright-sleeve-pack-14.jpg#jmui=f%3A1707%3A305769591%3A0TJ2esKaVmFpkv5edJK3c4e3">
+								<div class="card-body">
+									<h5 class="card-title">RFID Bright Sleeves [Pack of 3]</h5>
+									<p class="card-text">$11.00</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:88%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="sleeve">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://s.yimg.com/aah/yhst-94975210642937/rfid-credit-card-sleeve-145.jpg#jmui=f%3A1707%3A305769591%3A0TJ2esKaVmFpkv5edJK3c4e3">
+								<div class="card-body">
+									<h5 class="card-title">RFID Credit Card Sleeve</h5>
+									<p class="card-text">$3.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:90%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4" data-product-type="sleeve">
+							<div class="card shadow-sm">
+								<img class="card-img-top" src="https://s.yimg.com/aah/yhst-94975210642937/rfid-passport-sleeve-131.jpg#jmui=f%3A1707%3A305769591%3A0TJ2esKaVmFpkv5edJK3c4e3">
+								<div class="card-body">
+									<h5 class="card-title">RFID Passport Sleeve</h5>
+									<p class="card-text">$4.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:90%"></div>
+                  </div>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			<footer class="container footer py-5">
+				<div class="row">
+					<div class="col-6 col-md">
+						<h5>Retail</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Find a Show</a></li>
+							<li><a class="text-muted" href="#">Find a Store</a></li>
+							<li><a class="text-muted" href="#">Retail Program</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>Resources</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Wallet Care</a></li>
+							<li><a class="text-muted" href="#">Wallet FAQ</a></li>
+							<li><a class="text-muted" href="#">The Skinny Blog</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>Values</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Wallet Stories</a></li>
+							<li><a class="text-muted" href="#">Green Wallet Policy</a></li>
+							<li><a class="text-muted" href="#">Supplier Responsibility</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5>About</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Newsroom</a></li>
+							<li><a class="text-muted" href="#">Leadership</a></li>
+							<li><a class="text-muted" href="#">Terms</a></li>
+						</ul>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<small class="d-block mb-3 text-muted mx-auto">&copy; Copyright 2019 Big Skinny Corporation</small>
+				</div>
+			</footer>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script>
+		//Traval-Bag
+		$('#customControlInline1').click(function(){
+            if($(this).prop("checked") == true){
+	            $("[data-product-type='travalBag']").show();
+            }
+            else if($(this).prop("checked") == false){
+	            $("[data-product-type='travalBag']").hide();
+            }
+        });
+    //Card-Insert
+    $('#customControlInline2').click(function(){
+        if($(this).prop("checked") == true){
+          $("[data-product-type='insert']").show();
+        }
+        else if($(this).prop("checked") == false){
+          $("[data-product-type='insert']").hide();
+        }
+    });
+    //Card-Sleeve
+    $('#customControlInline3').click(function(){
+        if($(this).prop("checked") == true){
+          $("[data-product-type='sleeve']").show();
+        }
+        else if($(this).prop("checked") == false){
+          $("[data-product-type='sleeve']").hide();
+        }
+    });
+
+
+	</script>
+	</body>
+</html>

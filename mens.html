@@ -9,27 +9,53 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
-	
+
+
+      .ratings {
+        top: -1px;
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        color: #b1b1b1;
+        overflow: hidden;
+        font-size: 25px;
+        padding-right: 15px;
+      }
+      .full-stars {
+          position: absolute;
+          left: 0;
+          top: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          color: gold;
+          font-size: 25px;
+      }
+      .empty-stars:before, .full-stars:before {
+          content:"\2605\2605\2605\2605\2605";
+          font-size: 25px;
+      }
+
+
 	@media (min-width: 768px) {
 		#light-product-img {
 			padding: 0px 100px !important;
 		}
-		
+
 		#water-product-img {
 			padding: 0px 200px !important;
 		}
-		
+
 		#pocket-product-img {
 			padding: 0px 200px !important;
 		}
 	}
-      
+
     .container {
 	  max-width: 960px;
 	}
-	
+
 	/* Custom translucent site header */
-	
+
 	.site-header {
 	  background-color: rgba(0, 0, 0, .85);
 	  -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -43,19 +69,19 @@
 	  color: #fff;
 	  text-decoration: none;
 	}
-	
+
 	.showcase {
 		background-image: url("images/wallet1.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
-	
+
 	}
-	
+
 	/*
 	 * Extra utilities
 	 */
-	
+
 	.flex-equal > * {
 	  -ms-flex: 1;
 	  flex: 1;
@@ -66,9 +92,9 @@
 	    flex: 1;
 	  }
 	}
-	
+
 	.overflow-hidden { overflow: hidden; }
-	
+
 	.showcase {
 		background-image: url("images/wallet1.jpg");
 		background-repeat: no-repeat;
@@ -76,43 +102,43 @@
 		height: 94vh;
 
 	}
-	
+
 	/* Verticle Centering Div */
 	.vc-parent {
 		position: relative;
 	}
-	
+
 	.vc-child {
 		position: absolute;
 		top: 50%;
 		height: 100px;
 		margin-top: -20px;
 	}
-	
+
 	/* Cover Styling */
 	.welcome-text {
 		color: white;
 		text-align: center;
 		width: 100%;
 	}
-	
+
 	.shading {
 		background-color: rgba(0, 0, 0, 0.15);
 		height: 100%;
 	}
-	
+
 	.subheading {
 		font-weight: 300;
 	}
-	
+
 	.copyright-text {
 		text-align: center;
 	}
-	
+
 	.footer {
 		background-color: #f2f2f2
 	}
-	
+
 	.cover {
 		height: 35vh;
 		background-repeat: no-repeat;
@@ -120,18 +146,19 @@
 		background-position: center center;
 		background-image: url("https://cdn.shopify.com/s/files/1/1135/7924/products/BigSkinny-66.jpg?v=1555138574");
 	}
-	
+
 	.container-fluid {
 		margin: 20px 0px;
 	}
-	
+
 	.check-box-label {
 		font-size: 14px;
 	}
-	
+
 	.card {
 		border-radius: 0px;
 	}
+<<<<<<< HEAD
 	
 	.card-container {
 		padding-left: 10px;
@@ -158,12 +185,15 @@
 	}
 
 	</style> 
+=======
+	</style>
+>>>>>>> 7d5c24e127524418d3217d607e9677262e839d2b
 	</head>
 	<body>
 		<nav class="site-header sticky-top py-1">
 			<div class="container d-flex flex-column flex-md-row justify-content-between">
 				<a class="py-2" href="index.html">
-					<img height="25px" src="images/logo.png">    
+					<img height="25px" src="images/logo.png">
 	    		</a>
 			    <a class="py-2 d-none d-md-inline-block" href="mens.html">Men's Wallets</a>
 			    <a class="py-2 d-none d-md-inline-block" href="womens.html">Women's Wallets</a>
@@ -173,7 +203,7 @@
 			    <a class="py-2 d-none d-md-inline-block" href="cart.html"><i class="fas fa-shopping-bag"></i></a>
 		    </div>
 		</nav>
-		
+
 		<div class="cover vc-parent">
 			<div class="shading">
 				<div class="vc-child welcome-text">
@@ -181,7 +211,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="container-fluid">
 			<div class="row flex-xl-nowrap">
 				<div class="col-12 col-md-3 col-xl-2" style="padding-left: 20px;">
@@ -211,6 +241,10 @@
 								<div class="card-body">
 									<h5 class="card-title">Leather L-Shape</h5>
 									<p class="card-text">$39.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:90%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -221,6 +255,10 @@
 								<div class="card-body">
 									<h5 class="card-title">Leather Acrobat</h5>
 									<p class="card-text">$39.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:78%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -231,6 +269,10 @@
 								<div class="card-body">
 									<h5 class="card-title">Leather Super Skinny</h5>
 									<p class="card-text">$39.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:88%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -241,6 +283,10 @@
 								<div class="card-body">
 									<h5 class="card-title">Leather Tri-fold</h5>
 									<p class="card-text">$49.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:83%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -251,6 +297,10 @@
 								<div class="card-body">
 									<h5 class="card-title">RFID Bi-Fold</h5>
 									<p class="card-text">$49.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:95%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -261,6 +311,10 @@
 								<div class="card-body">
 									<h5 class="card-title">RFID L-Fold</h5>
 									<p class="card-text">$49.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:90%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -271,6 +325,10 @@
 								<div class="card-body">
 									<h5 class="card-title">Leather Travel Badge</h5>
 									<p class="card-text">$59.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:85%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -281,6 +339,10 @@
 								<div class="card-body">
 									<h5 class="card-title">Executive Black</h5>
 									<p class="card-text">$49.99</p>
+                  <div class="ratings">
+                      <div class="empty-stars"></div>
+                      <div class="full-stars" style="width:88%"></div>
+                  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<a href="#" class="btn btn-primary">Add to Cart</a>
 								</div>
 							</div>
@@ -288,9 +350,9 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
-			
+
 		<div class="footer">
 			<footer class="container footer py-5">
 				<div class="row">
@@ -334,7 +396,7 @@
 				</div>
 			</footer>
 		</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script>
 		//Bi-Fold
 		$('#customControlInline1').click(function(){
@@ -372,8 +434,7 @@
 	            $("[data-product-type='travel']").hide();
             }
         });
-		
+
 	</script>
 	</body>
 </html>
-
