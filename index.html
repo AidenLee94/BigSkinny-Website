@@ -8,21 +8,10 @@
     <!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
     <style>
-	@media (max-width: 768px) {
-		.nav-logo {
-			text-align: center !important;
-		}
-		
-		.drop-menu {
-			position: absolute;
-			color: white;
-		}
-	}
 	@media (min-width: 768px) {
-		.drop-menu {
-			display: none;
-		}
+		
 		#light-product-img {
 			padding: 0px 100px !important;
 		}
@@ -40,22 +29,6 @@
 	  max-width: 960px;
 	}
 	
-	/* Custom translucent site header */
-	
-	.site-header {
-	  background-color: rgba(0, 0, 0, .85);
-	  -webkit-backdrop-filter: saturate(180%) blur(20px);
-	  backdrop-filter: saturate(180%) blur(20px);
-	}
-	.site-header a {
-	  color: #999;
-	  transition: ease-in-out color .15s;
-	}
-	.site-header a:hover {
-	  color: #fff;
-	  text-decoration: none;
-	}
-	
 	.showcase {
 		background-image: url("images/wallet1.jpg");
 		background-repeat: no-repeat;
@@ -64,43 +37,16 @@
 	
 	}
 	
-	/*
-	 * Extra utilities
-	 */
-	
-	.flex-equal > * {
-	  -ms-flex: 1;
-	  flex: 1;
-	}
-	@media (min-width: 768px) {
-	  .flex-md-equal > * {
-	    -ms-flex: 1;
-	    flex: 1;
-	  }
-	}
-	
 	.overflow-hidden { overflow: hidden; }
 	
 	.showcase {
 		background-image: url("images/wallet1.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 94vh;
-
+		height: 100vh;
+		transform: translateY(-50.313px);
 	}
-	
-	/* Verticle Centering Div */
-	.vc-parent {
-		position: relative;
-	}
-	
-	.vc-child {
-		position: absolute;
-		top: 50%;
-		height: 100px;
-		margin-top: -20px;
-	}
-	
+		
 	/* Cover Styling */
 	.welcome-text {
 		color: white;
@@ -115,14 +61,6 @@
 	
 	.subheading {
 		font-weight: 300;
-	}
-	
-	.copyright-text {
-		text-align: center;
-	}
-	
-	.footer {
-		background-color: #f2f2f2
 	}
 	
 	#light-product-img {
@@ -159,72 +97,24 @@
 		color: white;
 	}
 	
-	/*sidenav */
-	.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 	</style> 
 	</head>
 	<body>
-		<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+		<div id="sidenav" class="sidenav">
+			<a href="mens.html">Men's Wallets</a>
+		    <a href="womens.html">Women's Wallets</a>
+		    <a href="card-cases.html">Card Cases & Clips</a>
+		    <a href="accessory.html">Accessory</a>
+		    <a href="support.html">Support</a>
+		    <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+		</div>
 		<div class="main">
 			<nav class="site-header sticky-top py-1">
 				<div class="container d-flex flex-column flex-md-row justify-content-between">
 					<div class="py-2 drop-menu" onclick="openNav()" href="javascript:void(0)"><i class="fas fa-bars"></i></div>
 					<a class="py-2 nav-logo" href="index.html">
-							<img height="25px" src="images/logo.png">
-	
+						<img height="25px" src="images/logo.png">
 		    		</a>
 				    <a class="py-2 d-none d-md-inline-block" href="mens.html">Men's Wallets</a>
 				    <a class="py-2 d-none d-md-inline-block" href="womens.html">Women's Wallets</a>
@@ -246,7 +136,6 @@
 			
 			<!-- Light -->
 			<div class="container light">
-				<br>
 				<br>
 				<br>
 				<br>
@@ -310,7 +199,6 @@
 									<h2>RFID</h2>
 									<label>Protection options available</label>
 								</div>
-							</div>
 							</div>
 							<br>
 					</div>
@@ -453,18 +341,9 @@
 				</footer>
 			</div>
 		</div>
+		<div class="mask"></div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-	<script>
-	function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}	</script>
+	<script src="js/nav.js"></script>
 	</body>
 </html>
 
